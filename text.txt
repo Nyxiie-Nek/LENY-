@@ -9,3 +9,6 @@ Armazenar os cursos oferecidos pela escola {
     As disciplinas em cada curso.
     Em qual curso o aluno esta matriculado? }
 Armazenar os dados dos professores.
+
+Entidades = ["Aluno", "Escola", "Cursos", "Disciplinas", "Professor"]
+Atributos = Aluno[]
