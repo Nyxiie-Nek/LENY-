@@ -1,0 +1,11 @@
+Store student's personal data.
+Store the courses offered by the school {
+    subjects in each course.
+    which course is the student enrolled in? }
+Store teacher's data.
+
+Armazenar os dados pessoais do aluno.
+Armazenar os cursos oferecidos pela escola {
+    As disciplinas em cada curso.
+    Em qual curso o aluno esta matriculado? }
+Armazenar os dados dos professores.
