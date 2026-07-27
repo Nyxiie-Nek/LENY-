@@ -1,34 +1,3 @@
-1:
-Armazenar os dados pessoais do aluno.
-Armazenar os cursos oferecidos pela escola {
-    As disciplinas em cada curso.
-    Em qual curso o aluno esta matriculado? }
-Armazenar os dados dos professores.
-
-2:
-Entidades = ["Aluno", "Escola", "Cursos", "Disciplinas", "Professor"]
-
-3:
-Atributos = {
-    Aluno[Nome, Id, Idade, notas]
-    Escola[Nome, Endereco, Tipo_de_escola]
-    Cursos[Nome, Disciplinas, Professores]
-    Disciplinas[Nome, Professor, Atividades]
-    Professor[Nome, Idade, Formacao, Disciplinas, Turmas]
-    }
-
-4:
-Aluno - Escola
-Aluno - Cursos
-Aluno - Disciplinas
-Aluno - Professor
-Escola - Cursos
-Escola - Disciplinas
-Escola - Professor
-Cursos - Disciplinas
-Cursos - Professor
-Disciplinas - Professor
-
 1º. Lista de Requisitos Funcionais
 O sistema deve cadastrar e manter os dados pessoais dos alunos.
 
