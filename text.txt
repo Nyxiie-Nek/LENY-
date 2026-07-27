@@ -1,14 +1,24 @@
-Store student's personal data.
-Store the courses offered by the school {
-    subjects in each course.
-    which course is the student enrolled in? }
-Store teacher's data.
-
+1:
 Armazenar os dados pessoais do aluno.
 Armazenar os cursos oferecidos pela escola {
     As disciplinas em cada curso.
     Em qual curso o aluno esta matriculado? }
 Armazenar os dados dos professores.
 
+2:
 Entidades = ["Aluno", "Escola", "Cursos", "Disciplinas", "Professor"]
-Atributos = Aluno[]
+
+3:
+Atributos = {
+    Aluno[Nome, Id, Idade, notas]
+    Escola[Nome, Endereco, Tipo_de_escola]
+    Cursos[Nome, Disciplinas, Professores]
+    Disciplinas[Nome, Professor, Atividades]
+    Professor[Nome, Idade, Formacao, Disciplinas, Turmas]
+    }
+
+4:
+Aluno - Escola
+Escola - Cursos
+Cursos - Disciplinas
+Disciplinas - Professores - Aluno
