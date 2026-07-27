@@ -19,6 +19,12 @@ Atributos = {
 
 4:
 Aluno - Escola
+Aluno - Cursos
+Aluno - Disciplinas
+Aluno - Professor
 Escola - Cursos
+Escola - Disciplinas
+Escola - Professor
 Cursos - Disciplinas
-Disciplinas - Professores - Aluno
+Cursos - Professor
+Disciplinas - Professor
