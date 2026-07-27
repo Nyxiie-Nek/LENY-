@@ -28,3 +28,47 @@ Escola - Professor
 Cursos - Disciplinas
 Cursos - Professor
 Disciplinas - Professor
+
+1º. Lista de Requisitos Funcionais
+O sistema deve cadastrar e manter os dados pessoais dos alunos.
+
+O sistema deve cadastrar e manter os cursos ofertados pela escola.
+
+O sistema deve cadastrar e manter os dados dos professores.
+
+O sistema deve cadastrar e manter as disciplinas associadas a cada curso.
+
+O sistema deve permitir a matrícula dos alunos nos cursos.
+
+2º. Entidades
+As entidades principais para o escopo solicitado são:
+
+Aluno
+
+Curso
+
+Disciplina
+
+Professor
+
+Nota sobre a entidade "Escola": Como o sistema é feito para uma secretaria de escola específica, a entidade "Escola" geralmente não é necessária no banco de dados (a menos que o sistema atendesse uma rede de várias escolas).
+
+3º. Atributos de Cada Entidade
+Atributos devem conter apenas informações próprias da entidade, e não referências a outras entidades.
+
+Aluno: ID_Aluno, Nome, CPF (ou RG/Data de Nascimento), Telefone, E-mail.
+
+Curso: ID_Curso, Nome_do_Curso, Carga_Horaria.
+
+Disciplina: ID_Disciplina, Nome_da_Disciplina, Carga_Horaria.
+
+Professor: ID_Professor, Nome, CPF, Formacao, E-mail.
+
+4º. Relacionamentos entre as Entidades
+Em vez de ligar "todo mundo com todo mundo", ligamos apenas as entidades que têm relação direta de negócio:
+
+Aluno está matriculado em Curso (1 Aluno pode estar em 1 ou mais Cursos; 1 Curso tem N Alunos).
+
+Curso possui Disciplinas (1 Curso tem várias Disciplinas; 1 Disciplina pode pertencer a cursos diferentes).
+
+Professor leciona Disciplina (1 Professor pode ministrar N Disciplinas).
